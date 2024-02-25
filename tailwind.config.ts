@@ -1,27 +1,41 @@
-import type { Config } from 'tailwindcss'
-import defaultTheme from 'tailwindcss/defaultTheme'
+import type { Config } from 'tailwindcss';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 export default <Partial<Config>>{
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['DM Sans', 'DM Sans fallback', ...defaultTheme.fontFamily.sans]
-      },
       colors: {
-        green: {
-          50: '#EFFDF5',
-          100: '#D9FBE8',
-          200: '#B3F5D1',
-          300: '#75EDAE',
-          400: '#00DC82',
-          500: '#00C16A',
-          600: '#00A155',
-          700: '#007F45',
-          800: '#016538',
-          900: '#0A5331',
-          950: '#052e16'
-        }
-      }
-    }
-  }
-}
+        'jungle-green': {
+          50: '#ebfef7',
+          100: '#d0fbe9',
+          200: '#a4f6d8',
+          300: '#6aebc5',
+          400: '#2fd8ab',
+          500: '#0abf95',
+          600: '#00b08b',
+          700: '#007c65',
+          800: '#036251',
+          900: '#045044',
+          950: '#012d27',
+        },
+        bunker: {
+          50: '#f4f7fb',
+          100: '#e9eff5',
+          200: '#cedde9',
+          300: '#a2c1d7',
+          400: '#709fc0',
+          500: '#4e84a9',
+          600: '#3c6a8d',
+          700: '#315573',
+          800: '#2c4960',
+          900: '#293e51',
+          950: '#101820',
+        },
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'Poppins fallback', ...defaultTheme.fontFamily.sans],
+        amatic: ['Amatic SC', 'Amatic SC fallback', ...defaultTheme.fontFamily.sans],
+      },
+    },
+  },
+};

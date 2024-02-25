@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h3, h4, h5, h6, p, a {
+    @apply font-amatic font-bold tracking-wide
+  }
+
+  h1, h2 {
+    @apply uppercase font-poppins
+  }
+}
+
+@layer components {
+  .logo {
+    fill: black;
+    
+    path {
+      @apply dark:fill-white;
+    }
+  }
+}

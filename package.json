@@ -27,6 +27,7 @@
     "@vue/eslint-config-airbnb-with-typescript": "^8.0.0",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.22.0",
+    "nuxt-svgo": "^4.0.0",
     "prettier": "^3.2.5",
     "prettier-eslint": "^16.3.0",
     "typescript": "^5.3.3"

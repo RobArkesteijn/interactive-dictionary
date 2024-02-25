@@ -1,7 +1,7 @@
 export default defineAppConfig({
   ui: {
-    primary: 'green',
-    gray: 'slate',
+    primary: 'jungle-green',
+    gray: 'bunker',
     tooltip: {
       background: '!bg-background',
     },
@@ -29,6 +29,21 @@ export default defineAppConfig({
           inactive: 'dark:hover:bg-gray-950/50',
         },
       },
+      links: {
+        base: 'text-xl',
+      },
+    },
+    landing: {
+      hero: {
+        title: 'tracking-normal',
+        description: 'tracking-wide',
+      },
+      section: {
+        title: 'tracking-normal',
+      },
+    },
+    main: {
+      wrapper: 'min-h-[calc(100vh-220px)] lg:min-h-[calc(100vh-144px)]',
     },
   },
 });

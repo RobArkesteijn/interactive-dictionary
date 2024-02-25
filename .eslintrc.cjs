@@ -7,14 +7,12 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: [
-    'plugin:vue/vue3-recommended',
-    '@vue/eslint-config-airbnb-with-typescript',
-  ],
+  extends: ['plugin:vue/vue3-recommended', '@vue/eslint-config-airbnb-with-typescript'],
   rules: {
     'import/no-extraneous-dependencies': 'off',
     'import/no-duplicates': 'off',
     'vue/multi-word-component-names': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
     'no-param-reassign': 'off',
     'import/extensions': [
       'off',

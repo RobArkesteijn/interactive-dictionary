@@ -6,17 +6,19 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   extends: ['@nuxt/ui-pro'],
   fontMetrics: {
-    fonts: ['DM Sans'],
+    fonts: ['Poppins', 'Amatic SC'],
   },
   googleFonts: {
     display: 'swap',
     download: true,
     families: {
-      'DM+Sans': [400, 500, 600, 700],
+      Poppins: true,
+      'Amatic SC': true,
     },
   },
   modules: [
     '@nuxtjs/eslint-module',
+    'nuxt-svgo',
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
     '@nuxt/ui',
@@ -29,6 +31,12 @@ export default defineNuxtConfig({
     },
   },
   srcDir: 'src/',
+  svgo: {
+    defaultImport: 'component',
+  },
+  tailwindcss: {
+    viewer: false,
+  },
   ui: {
     icons: ['ph', 'simple-icons'],
   },
